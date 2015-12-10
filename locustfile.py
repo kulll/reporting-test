@@ -7,9 +7,9 @@ class GetUrl(TaskSet):
         self.country = choice(self.parent.countries)
         self.headers = {'X-Real-IP': self.country}
 
-    @task
-    def get_video(self):
-        self.client.get('/videos/dummy.mp4', headers=self.headers)
+#    @task
+#    def get_video(self):
+#        self.client.get('/videos/dummy.mp4', headers=self.headers)
 
     @task
     def get_image(self):
